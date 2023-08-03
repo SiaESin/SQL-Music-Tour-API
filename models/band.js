@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Band',
     tableName: 'band',
-    timestamp: false
+    timestamps: false
   });
   return Band;
 };
