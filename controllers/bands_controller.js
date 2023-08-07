@@ -9,7 +9,7 @@ bands.get('/', async (req, res)=> {
             order: [['available_start_time', 'ASC']],
             where: {
                 name: {
-                    [Op.like]: `%${req.query.name}%`,
+                    [Op.like]: `%${req.query.name ? req.query.name: ''}%`,
                 },
             },
         })
