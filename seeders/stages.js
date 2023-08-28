@@ -5,43 +5,43 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('stage', [
       {
-        stage_name: 'Vibe',
+        name: 'Vibe',
         capacity: 800
       },
       {
-        stage_name: 'BeatRoot',
+        name: 'BeatRoot',
         capacity: 500
       },
       {
-        stage_name: 'Ear Worm',
+        name: 'Ear Worm',
         capacity: 1000
       },
       {
-        stage_name: 'Mingwa',
+        name: 'Mingwa',
         capacity: 1200
       },
       {
-        stage_name: 'Purple',
+        name: 'Purple',
         capacity: 10000
       },
       {
-        stage_name: 'Phoenix',
+        name: 'Phoenix',
         capacity: 60000
       },
       {
-        stage_name: 'Vuvuzela',
+        name: 'Vuvuzela',
         capacity: 6000
       },
       {
-        stage_name: 'Mega Lounge',
+        name: 'Mega Lounge',
         capacity: 800
       },
       {
-        stage_name: 'Garage',
+        name: 'Garage',
         capacity: 4000
       },
       {
-        stage_name: 'Bonobo',
+        name: 'Bonobo',
         capacity: 1200
       },
     ], {});

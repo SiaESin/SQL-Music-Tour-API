@@ -5,9 +5,9 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('meet_greet', [
       {
-        meet_greet_id: 8,
-        event_id: 8,
-        band_id: 8,
+        meet_greet_id: 18,
+        event_id: 18,
+        band_id: 18,
         meet_date: '2024-04-18',
         meet_start_time: '16:00:00',
         meet_end_time: '19:00:00'

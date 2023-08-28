@@ -37,11 +37,11 @@ module.exports = {
         event_id: 15,
       },
       {
-        stage_id: 16,
+        stage_id: 6,
         event_id: 16,
       },
       {
-        stage_id: 17,
+        stage_id: 7,
         event_id: 17,
       },
       

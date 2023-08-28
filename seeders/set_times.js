@@ -5,9 +5,9 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('set_time', [
       {
-        set_time_id: '18', 
-        event_id: '18',
-        stage_id: '18',
+        set_time_id: '8', 
+        event_id: '8',
+        stage_id: '8',
         band_id: '18',
         set_start_time: '17:00:00',
         set_end_time: '18:00:00'
@@ -33,8 +33,8 @@ module.exports = {
         event_id: '11',
         stage_id: '11',
         band_id: '11',
-        set_start_time: '18:00:00',
-        set_end_time: '21:00:00'
+        set_start_time: '19:00:00',
+        set_end_time: '23:00:00'
       },
       {
         set_time_id: '12', 
@@ -71,7 +71,7 @@ module.exports = {
       {
         set_time_id: '16', 
         event_id: '16',
-        stage_id: '16',
+        stage_id: '6',
         band_id: '16',
         set_start_time: '20:00:00',
         set_end_time: '22:00:00'
@@ -79,35 +79,12 @@ module.exports = {
       {
         set_time_id: '17', 
         event_id: '17',
-        stage_id: '17',
+        stage_id: '7',
         band_id: '17',
         set_start_time: '16:00:00',
         set_end_time: '19:00:00'
       },
-      {
-        set_time_id: '19', 
-        event_id: '19',
-        stage_id: '19',
-        band_id: '19',
-        set_start_time: '12:00:00',
-        set_end_time: '13:00:00'
-      },
-      {
-        set_time_id: '20', 
-        event_id: '20',
-        stage_id: '20',
-        band_id: '20',
-        set_start_time: '13:00:00',
-        set_end_time: '14:00:00'
-      },
-      {
-        set_time_id: '21', 
-        event_id: '21',
-        stage_id: '21',
-        band_id: '21',
-        set_start_time: '14:00:00',
-        set_end_time: '15:00:00'
-      },
+
       
     ], {});
   },
