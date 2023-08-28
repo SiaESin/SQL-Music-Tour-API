@@ -75,7 +75,10 @@ events.get('./:name', async (req, res) => {
 events.post('/', async (req, res) => {
   try {
     const newEvent = await Event.create(req.body);
-    res.status(200).json(newEvent);
+    res.status(200).json({
+        message: 'Created a new event',
+        data: newEvent,
+    });
   } catch (e) {
     res.status(500).json(e);
   }

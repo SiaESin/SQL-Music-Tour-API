@@ -1,6 +1,6 @@
 const stages = require('express').Router()
 const db = require('../models')
-const { Stage } = db
+const { Stage, Event, Stage_Event } = db
 const { Op } = require('sequelize')
 
 //index all
@@ -28,10 +28,10 @@ stages.get('/:name', async (req, res) => {
 				model: Event,
 				as: 'events',
 				attributes: ['name', 'date'],
-				through: { attributes: [] },
+				through: Stage_Event,
 			},
 			attributes: { exclude: ['stage_id'] },
-			order: [[{ model: Event, as: 'events' }, 'date', 'ASC']]
+			order: [{ model: Event, as: 'events' }, 'date', 'ASC']
         })
         res.status(200).json(foundStage)
     } catch(e) {

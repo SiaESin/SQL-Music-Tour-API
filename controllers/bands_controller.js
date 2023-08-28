@@ -31,11 +31,11 @@ bands.get('/:name', async (req, res) => {
           include: {
             model: Event,
             as: 'event',
-            // where: {
-            //     name: {
-            //         [Op.like]: `%${req.query.event ? req.query.event : ''}%`
-            //     }
-            // }
+            where: {
+                name: {
+                    [Op.like]: `%${req.query.event ? req.query.event : ''}%`
+                }
+            }
           },
         },
         {
